@@ -4,7 +4,6 @@ const getAllUsers = async (req, res) => {
     try {
         await db.all(`SELECT name, id FROM users`,
             (_, data) => {
-            // console.log(data)
                 return res.send(data).status(200)
             })
     } catch (err) {

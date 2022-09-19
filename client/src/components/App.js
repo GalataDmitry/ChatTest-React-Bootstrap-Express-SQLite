@@ -87,9 +87,7 @@ const App = () => {
                     {pagesCount?.map(el => {
                         return <li className="page-item">
                             <button
-                                onClick={() => {
-                                    setCurrentPage(pagesCount.findIndex(page => page === el))
-                                }}
+                                onClick={() => setCurrentPage(pagesCount.findIndex(page => page === el))}
                                 className="page-link"
                             >
                                 {el}
