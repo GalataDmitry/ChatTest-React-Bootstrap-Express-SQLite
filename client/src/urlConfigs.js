@@ -1,0 +1,5 @@
+export const getAllUsersUrlConfig = 'http://127.0.0.1:5000/api/get_all_users'
+export const getAllMessagesUrlConfig = 'http://127.0.0.1:5000/api/get_all_messages'
+export const sendMessagesUrlConfig = 'http://127.0.0.1:5000/api/send_message'
+export const uploadImagesConfig = 'http://127.0.0.1:5000/api/upload'
+export const baseServerUrlConfig = 'http://127.0.0.1:5000/'
