@@ -32,10 +32,6 @@ const getAllMessages = async (req, res) => {
                         if (datesForTables[i]?.date === data[j]?.created_at) datesForTables[i]['messCount']++
                     }
                 }
-                // for (let i = 0; i <= data?.length - 1; i++) {
-                //     let _date = data[i].created_at
-                //     datesForTables[_date]['messCount']++
-                // }
                 await db.all(`SELECT COUNT(*) as count FROM messages WHERE created_at <= '${currentDate}' AND created_at >= '${pastDate}'`,
                     async (_, data) => {
                         messagesCountForWeek = data
